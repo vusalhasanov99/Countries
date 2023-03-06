@@ -1,0 +1,49 @@
+.header{
+    box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.404);
+}
+.search {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-div {
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 7px;
+    display: flex;
+    padding: 8px 3px;
+}
+
+.search-div input {
+    background-color: transparent;
+    color: red;
+    font-size: 1.2rem;
+}
+
+.search-icon {
+padding: 0 10px;
+}
+
+.search-icon a {
+    color: black;
+    cursor: auto;
+}
+
+.mySearch {
+    border: none;
+ 
+}
+.mode{
+    cursor: pointer;
+}
+
+.filter-by-region select{
+    border: 0;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.404);
+    cursor: pointer;
+    
+}
