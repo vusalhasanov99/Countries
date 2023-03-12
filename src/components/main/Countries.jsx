@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Countries({ name, population, flag }) {
+function Countries({ name, capital, flag }) {
   return (
     <div className='countries'>
       <div className="card-group" >
@@ -10,7 +10,7 @@ function Countries({ name, population, flag }) {
           <Link to={'/' +name}>
             <div className="card-body">
               <h4 className="card-title">{name}</h4>
-              <p className="card-text">Population:{population}</p>
+              <p className="card-text">{capital}</p>
             </div>
           </Link>
         </div>

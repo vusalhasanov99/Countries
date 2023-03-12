@@ -10,16 +10,17 @@ function Country() {
     axios.get(`https://restcountries.com/v2/name/${name}?fullText=true`)
       .then(response => setCountry(response.data[0]));
   }, []);
+
   return (
     <div className='container py-5'>
-<Link to="/">
-  <button className='btn btn-outline-primary'><i class="fa-solid fa-arrow-left-long"></i>Back</button>
-</Link>
+      <Link to="/">
+        <button className='btn btn-outline-primary'><i class="fa-solid fa-arrow-left-long"></i>Back</button>
+      </Link>
       <div className='countries d-flex justify-content-center'>
         <div className="card-group" style={{ width: "400px" }} >
-          <div className="card">
+          <div className="card" >
             <img className="card-img-top" src={country.flag} style={{ height: "50%", width: "100%" }} alt={country.name} />
-            <div className="card-body">
+            <div className="card-body" style={{ color: "blue" }}>
               <h4 className="card-title">{country.name}</h4>
               <p className="card-text">Spoken language: {country.nativeName}</p>
               <p className="card-text">Capital: {country.capital}</p>
